@@ -211,7 +211,7 @@ export default function App() {
                 value={studentName}
                 onChange={(e) => setStudentName(e.target.value)}
                 className="w-full mt-1 px-3 py-2 border border-slate-200 rounded-lg focus:ring-2 outline-none text-sm"
-                style={{ focusRingColor: currentTheme.accentColor }}
+                style={{ '--tw-ring-color': currentTheme.accentColor } as React.CSSProperties}
                 placeholder="이름을 입력하세요"
               />
             </div>
